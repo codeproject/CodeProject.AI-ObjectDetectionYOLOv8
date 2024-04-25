@@ -19,4 +19,6 @@ ultralytics==8.1.2              # Installing Ultralytics package for object dete
 # Seaborn                       # Installing Seaborn, a data visualization library based on matplotlib
 # matplotlib                    # Installing matplotlib, the python plotting package
 
+CodeProject-AI-SDK              # Installing the CodeProject.AI SDK
+
 # last line empty.
