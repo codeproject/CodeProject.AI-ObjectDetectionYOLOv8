@@ -1,0 +1,10 @@
+{
+  "Modules": {
+
+    "ObjectDetectionYOLOv8": {
+      "LaunchSettings": {
+        "Runtime": "python3.9"
+      }
+    }
+  }
+}
