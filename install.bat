@@ -14,9 +14,9 @@
 )
 
 :: Download the YOLO models and custom models and store in /assets
-REM call "%sdkScriptsDirPath%\utils.bat" GetFromServer "models/" "models-yolo8-pt.zip"                     "assets" "Downloading YOLO object detection models..."
-REM call "%sdkScriptsDirPath%\utils.bat" GetFromServer "models/" "objectsegmentation-coco-yolov8-pt-m.zip" "assets" "Downloading YOLO segmentation models..."
-REM call "%sdkScriptsDirPath%\utils.bat" GetFromServer "models/" "objectdetection-custom-yolov8-pt-m.zip" "custom-models" "Downloading Custom YOLO models..."
+REM call "%utilsScript%" GetFromServer "models/" "models-yolo8-pt.zip"                     "assets" "Downloading YOLO object detection models..."
+REM call "%utilsScript%" GetFromServer "models/" "objectsegmentation-coco-yolov8-pt-m.zip" "assets" "Downloading YOLO segmentation models..."
+REM call "%utilsScript%" GetFromServer "models/" "objectdetection-custom-yolov8-pt-m.zip" "custom-models" "Downloading Custom YOLO models..."
 
 REM TODO: Check assets created and has files
 REM set moduleInstallErrors=...
