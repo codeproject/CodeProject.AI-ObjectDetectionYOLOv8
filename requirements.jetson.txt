@@ -6,7 +6,6 @@
 # wheel
 # mock
 # testresources
-# setuptools==58.3.0
 # Cython
 
 Pandas                        # Installing Pandas, a data analysis / data manipulation tool
