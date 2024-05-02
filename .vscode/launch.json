@@ -1,0 +1,71 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "presentation": {
+                "group": "Start",
+                "hidden": false
+            },
+
+            "name": "Launch Object Detect YOLOv8",
+            "type": "debugpy",
+            "justMyCode": false,
+            "request": "launch",
+            "program": "detect_adapter.py",
+            // "args": [ "--selftest" ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+
+            "env": {
+                "DEBUG_IN_VSCODE": "True",
+                "RUNNING_IN_VSCODE": "True",
+                // "CPAI_LOG_VERBOSITY": "Loud",
+                "CPAI_PORT": "32168",
+                "CPAI_MODULE_QUEUENAME": "objectdetection_queue",
+
+                "MODEL_SIZE": "Small"
+            },
+
+            "python": "${workspaceFolder}\\bin\\windows\\python39\\venv\\Scripts\\python.exe",
+            "windows": {
+                "python": "${workspaceFolder}/bin/windows/python39/venv/Scripts/python.exe"
+            },
+            "linux": {
+                "python": "${workspaceFolder}/bin/linux/python38/venv/bin/python",
+            },
+            "osx": {
+                "python": "${workspaceFolder}/bin/macos/python38/venv/bin/python",
+            }
+        },
+
+        {
+            "presentation": {
+                "group": "Start",
+                "hidden": false
+            },
+
+            "name": "Object Detect YOLOv5 3.1 Jetson",
+            "type": "debugpy",
+            "justMyCode": false,
+            "request": "launch",
+            "program": "detect_adapter.py",
+            // "args": [ "--selftest" ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+
+            "env": {
+                "DEBUG_IN_VSCODE": "True",
+                "RUNNING_IN_VSCODE": "True",
+                // "CPAI_LOG_VERBOSITY": "Loud",
+                "CPAI_PORT": "32168",
+                "CPAI_MODULE_QUEUENAME": "objectdetection_queue",
+
+                "MODEL_SIZE": "Small",                
+                "OPENBLAS_CORETYPE": "ARMV8", // needed for Jetson
+                "LD_PRELOAD": "/usr/lib/aarch64-linux-gnu/libgomp.so.1"
+            },
+
+            "python": "${workspaceFolder}/bin/linux/python38/venv/bin/python"
+        }
+    ]
+}
