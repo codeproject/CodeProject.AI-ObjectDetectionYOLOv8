@@ -1,6 +1,7 @@
 #! Python3.8
-
 # CUDA requirements for Linux with CUDA 11.5 installed (default for WSL)
+
+numpy<2.0                       # Installing NumPy, a package for scientific computing
 
 # Pandas                        # Installing Pandas, a data analysis / data manipulation tool
 # CoreMLTools                   # Installing CoreMLTools, for working with .mlmodel format models

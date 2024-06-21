@@ -1,6 +1,7 @@
 #! Python3.8
-
 # General CUDA requirements for Linux (fallback if other CUDA-specific files aren't eligible)
+
+numpy<2.0                       # Installing NumPy, a package for scientific computing
 
 # Pandas                        # Installing Pandas, a data analysis / data manipulation tool
 # CoreMLTools                   # Installing CoreMLTools, for working with .mlmodel format models

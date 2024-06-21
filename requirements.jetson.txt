@@ -1,6 +1,8 @@
 #! Python3.8
 # Requirements for Nvidia Jetson (Jetson is linux,Arm64, and has CUDA installed)
 
+numpy<2.0                       # Installing NumPy, a package for scientific computing
+
 # These are installed by the install script prior to Torch / TorchVision being installed in the script
 # future
 # wheel
