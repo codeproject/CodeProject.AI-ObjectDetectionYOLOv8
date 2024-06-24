@@ -13,6 +13,9 @@
     @goto:eof
 )
 
+REM Backwards compatibility with Server 2.6.5
+if "!utilsScript!" == "" if "!sdkScriptsDirPath!" NEQ "" set utilsScript=%sdkScriptsDirPath%\utils.bat
+
 :: Download the YOLO models and custom models and store in /assets
 REM call "%utilsScript%" GetFromServer "models/" "models-yolo8-pt.zip"                     "assets" "Downloading YOLO object detection models..."
 REM call "%utilsScript%" GetFromServer "models/" "objectsegmentation-coco-yolov8-pt-m.zip" "assets" "Downloading YOLO segmentation models..."
