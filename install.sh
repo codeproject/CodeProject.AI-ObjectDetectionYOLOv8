@@ -21,7 +21,7 @@ fi
 
 # For Jetson, we need to install Torch before the other packages.
 # A huge thanks to QEngineering: https://qengineering.eu/install-pytorch-on-jetson-nano.html
-if [ "$module_install_errors" = "" ] && [ "$edgeDevice" = "Jetson" ]; then 
+if [ "$moduleInstallErrors" = "" ] && [ "$edgeDevice" = "Jetson" ]; then 
 
     # NOTE: Pytorch 2.0 and above uses CUDA 11. The Jetson Nano has CUDA 10.2.
     # Due to low-level GPU incompatibility, installing CUDA 11 on your Nano is 
@@ -182,7 +182,7 @@ if [ "$os_name" = "Big Sur" ]; then   # macOS 11.x on Intel, kernal 20.x
 fi
 
 # Install drivers for non Docker images
-if [ "$module_install_errors" = "" ] && [ "$inDocker" != true ] && [ "$os" = "linux" ] ; then
+if [ "$moduleInstallErrors" = "" ] && [ "$inDocker" != true ] && [ "$os" = "linux" ] ; then
 
     echo
 
@@ -208,7 +208,7 @@ if [ "$module_install_errors" = "" ] && [ "$inDocker" != true ] && [ "$os" = "li
 fi
 
 # Download the models and store in /assets and /custom-models (already in place in docker)
-# if [ "$module_install_errors" = "" ]; then
+# if [ "$moduleInstallErrors" = "" ]; then
 #     getFromServer "models/" "models-yolo8-pt.zip"                     "assets" "Downloading YOLO object detection models..."
 #     getFromServer "models/" "objectsegmentation-coco-yolov8-pt-m.zip" "assets" "Downloading YOLO segmentation models..."
 #
@@ -216,4 +216,4 @@ fi
 # fi
 
 # TODO: Check assets created and has files
-# module_install_errors=...
+# moduleInstallErrors=...
