@@ -3,7 +3,7 @@
 
     "ObjectDetectionYOLOv8": {
       "Name": "Object Detection (YOLOv8)",
-      "Version": "1.5.0",
+      "Version": "1.6.0",
 
       "PublishingInfo" : {
         "Description" : "Provides Object Detection in Python>=3.8 using YOLOv8. Great for newer NVIDIA GPUs",
@@ -48,21 +48,22 @@
       "InstallOptions" : {
         "Platforms":      [ "all" ],      // The platforms this module can and cannot be installed on
         "ModuleReleases": [               // Which server version is compatible with each version of this module.
-          { "ModuleVersion": "1.0.1", "ServerVersionRange": [ "2.4.2", ""       ], "ReleaseDate": "2023-12-09", "ReleaseNotes": "Installer updates", "Importance": "Minor" },
-          { "ModuleVersion": "1.0.2", "ServerVersionRange": [ "2.4.2", ""       ], "ReleaseDate": "2023-12-10", "ReleaseNotes": "Bug fixes" },
-          { "ModuleVersion": "1.1.0", "ServerVersionRange": [ "2.4.2", ""       ], "ReleaseDate": "2023-12-13", "ReleaseNotes": "Added custom model" },
-          { "ModuleVersion": "1.1.1", "ServerVersionRange": [ "2.4.2", ""       ], "ReleaseDate": "2023-12-15", "ReleaseNotes": "Fixed YOLO threading issue" },
+          { "ModuleVersion": "1.0.1", "ServerVersionRange": [ "2.4.2", "2.5.0" ], "ReleaseDate": "2023-12-09", "ReleaseNotes": "Installer updates", "Importance": "Minor" },
+          { "ModuleVersion": "1.0.2", "ServerVersionRange": [ "2.4.2", "2.5.0" ], "ReleaseDate": "2023-12-10", "ReleaseNotes": "Bug fixes" },
+          { "ModuleVersion": "1.1.0", "ServerVersionRange": [ "2.4.2", "2.5.0" ], "ReleaseDate": "2023-12-13", "ReleaseNotes": "Added custom model" },
+          { "ModuleVersion": "1.1.1", "ServerVersionRange": [ "2.4.2", "2.5.0" ], "ReleaseDate": "2023-12-15", "ReleaseNotes": "Fixed YOLO threading issue" },
           { "ModuleVersion": "1.2.0", "ServerVersionRange": [ "2.5.0-RC1", "2.5.0-RC5" ], "ReleaseDate": "2024-01-06", "ReleaseNotes": "Additions for dynamic explorer UI" },
           { "ModuleVersion": "1.2.1", "ServerVersionRange": [ "2.5.0-RC1", "2.5.0-RC1" ], "ReleaseDate": "2024-01-13", "ReleaseNotes": "Changes to SDK" },
-          { "ModuleVersion": "1.2.2", "ServerVersionRange": [ "2.5.0-RC6", "" ], "ReleaseDate": "2024-01-16", "ReleaseNotes": "Updated modulesettings schema" },
-          { "ModuleVersion": "1.2.3", "ServerVersionRange": [ "2.5.0-RC6", "" ], "ReleaseDate": "2024-01-17", "ReleaseNotes": "Fix for 'import' error, addition of 'huge' model" },
-          { "ModuleVersion": "1.2.4", "ServerVersionRange": [ "2.5.0-RC6", "" ], "ReleaseDate": "2024-01-18", "ReleaseNotes": "Updated explorer" },
-          { "ModuleVersion": "1.3.0", "ServerVersionRange": [ "2.5.0-RC6", "" ], "ReleaseDate": "2024-01-21", "ReleaseNotes": "Module performance statistics added" },
-          { "ModuleVersion": "1.3.1", "ServerVersionRange": [ "2.5.2", ""     ], "ReleaseDate": "2024-02-08", "ReleaseNotes": "Support for CodeProject.AI Server 2.5.2" },
-          { "ModuleVersion": "1.4.1", "ServerVersionRange": [ "2.5.7", ""     ], "ReleaseDate": "2024-03-03", "ReleaseNotes": "Added object segmentation support" },
-          { "ModuleVersion": "1.4.2", "ServerVersionRange": [ "2.6.0", ""     ], "ReleaseDate": "2024-04-01", "ReleaseNotes": "Updated for server 2.6" },
-          { "ModuleVersion": "1.4.3", "ServerVersionRange": [ "2.6.0", ""     ], "ReleaseDate": "2024-04-07", "ReleaseNotes": "Added thread lock to address multi-threaded issue" },
-          { "ModuleVersion": "1.5.0", "ServerVersionRange": [ "2.6.5", ""     ], "ReleaseDate": "2024-04-25", "ReleaseNotes": "Corrected Numpy 2.0 issue" }
+          { "ModuleVersion": "1.2.2", "ServerVersionRange": [ "2.5.0-RC6", ""  ], "ReleaseDate": "2024-01-16", "ReleaseNotes": "Updated modulesettings schema" },
+          { "ModuleVersion": "1.2.3", "ServerVersionRange": [ "2.5.0-RC6", ""  ], "ReleaseDate": "2024-01-17", "ReleaseNotes": "Fix for 'import' error, addition of 'huge' model" },
+          { "ModuleVersion": "1.2.4", "ServerVersionRange": [ "2.5.0-RC6", ""  ], "ReleaseDate": "2024-01-18", "ReleaseNotes": "Updated explorer" },
+          { "ModuleVersion": "1.3.0", "ServerVersionRange": [ "2.5.0-RC6", ""  ], "ReleaseDate": "2024-01-21", "ReleaseNotes": "Module performance statistics added" },
+          { "ModuleVersion": "1.3.1", "ServerVersionRange": [ "2.5.2", "2.6.0" ], "ReleaseDate": "2024-02-08", "ReleaseNotes": "Support for CodeProject.AI Server 2.5.2" },
+          { "ModuleVersion": "1.4.1", "ServerVersionRange": [ "2.5.7", "2.6.0" ], "ReleaseDate": "2024-03-03", "ReleaseNotes": "Added object segmentation support" },
+          { "ModuleVersion": "1.4.2", "ServerVersionRange": [ "2.6.0", "2.6.0" ], "ReleaseDate": "2024-04-01", "ReleaseNotes": "Updated for server 2.6" },
+          { "ModuleVersion": "1.4.3", "ServerVersionRange": [ "2.6.0", "2.6.0" ], "ReleaseDate": "2024-04-07", "ReleaseNotes": "Added thread lock to address multi-threaded issue" },
+          { "ModuleVersion": "1.5.0", "ServerVersionRange": [ "2.6.5", "2.7.0" ], "ReleaseDate": "2024-04-25", "ReleaseNotes": "Corrected NumPy 2.0 issue" },
+          { "ModuleVersion": "1.6.0", "ServerVersionRange": [ "2.8.0", ""      ], "ReleaseDate": "2024-08-02", "ReleaseNotes": "Updated for server 2.8" }
         ],
         "DownloadableModels":[
           { "Name": "YOLOv8 Object Detection all sizes",    "Filename": "objectdetection-coco-yolov8-pt-nsmlx.zip",    "Folder": "assets", "Description": "YOLOv8 object detection using the COCO dataset. Sizes N(ano), S, M, L, XL", "FileSizeKb": 275800, "PreInstall": true },
