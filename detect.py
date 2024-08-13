@@ -146,8 +146,9 @@ def do_detection(module_runner, models_dir: str, model_name: str, resolution: in
         use_half_precision = half_precision == "true"
         results = None
         with predict_lock:
-            results = detector.predict(img, imgsz=resolution, half=use_half_precision,
-                                                  device=accel_device_name)
+            results = detector.predict(img, imgsz=resolution,
+                                       half=use_half_precision,
+                                       device=accel_device_name)
         inferenceMs = int((time.perf_counter() - start_inference_time) * 1000)
 
         outputs = []
