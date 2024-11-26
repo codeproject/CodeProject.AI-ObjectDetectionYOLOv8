@@ -105,21 +105,21 @@ if [ "$moduleInstallErrors" = "" ] && [ "$edgeDevice" = "Jetson" ]; then
         if [ $? -eq 0 ]; then
             writeLine "Torch aleady installed" $color_info
         else
-            if [ ! -f "${downloadDirPath}/${os}/packages/${torch_wheel}" ]; then
-                if [ ! -d "${downloadDirPath}/${os}/packages" ]; then
-                    mkdir -p "${downloadDirPath}/${os}/packages"
+            if [ ! -f "${downloadDirPath}/${platform_dir}/packages/${torch_wheel}" ]; then
+                if [ ! -d "${downloadDirPath}/${platform_dir}/packages" ]; then
+                    mkdir -p "${downloadDirPath}/${platform_dir}/packages"
                 fi
 
                 if [ "$use_NVIDIA" == true ]; then
-                    wget $torch_location -O "${downloadDirPath}/${os}/packages/${torch_wheel}"
+                    wget $torch_location -O "${downloadDirPath}/${platform_dir}/packages/${torch_wheel}"
                 else
                     gdown $torch_location
-                    mv -f $torch_wheel "${downloadDirPath}/${os}/packages/"
+                    mv -f $torch_wheel "${downloadDirPath}/${platform_dir}/packages/"
                 fi
             fi
     
              # install PyTorch 
-            cp "${downloadDirPath}/${os}/packages/${torch_wheel}" .
+            cp "${downloadDirPath}/${platform_dir}/packages/${torch_wheel}" .
             installPythonPackagesByName "${torch_wheel}" "PyTorch"
             rm "${torch_wheel}"
         fi
@@ -134,15 +134,15 @@ if [ "$moduleInstallErrors" = "" ] && [ "$edgeDevice" = "Jetson" ]; then
             if [ "$use_NVIDIA" == true ]; then
                 installPythonPackagesByName "${torch_vision}" "TorchVision"
             else
-                if [ ! -f "${downloadDirPath}/${os}/packages/${torchvision_wheel}" ]; then
-                    if [ ! -d "${downloadDirPath}/${os}/packages" ]; then
-                        mkdir -p "${downloadDirPath}/${os}/packages"
+                if [ ! -f "${downloadDirPath}/${platform_dir}/packages/${torchvision_wheel}" ]; then
+                    if [ ! -d "${downloadDirPath}/${platform_dir}/packages" ]; then
+                        mkdir -p "${downloadDirPath}/${platform_dir}/packages"
                     fi
                     gdown $torchvision_location
-                    mv -f $torchvision_wheel "${downloadDirPath}/${os}/packages/"
+                    mv -f $torchvision_wheel "${downloadDirPath}/${platform_dir}/packages/"
                 fi
 
-                cp "${downloadDirPath}/${os}/packages/${torchvision_wheel}" .
+                cp "${downloadDirPath}/${platform_dir}/packages/${torchvision_wheel}" .
                 installPythonPackagesByName "${torchvision_wheel}" "TorchVision"
                 rm "${torchvision_wheel}"
             fi
