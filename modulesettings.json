@@ -3,7 +3,7 @@
 
     "ObjectDetectionYOLOv8": {
       "Name": "Object Detection (YOLOv8)",
-      "Version": "1.6.1",
+      "Version": "1.6.2",
 
       "PublishingInfo" : {
         "Description" : "Provides Object Detection in Python>=3.8 using YOLOv8. Great for newer NVIDIA GPUs",
@@ -64,7 +64,8 @@
           { "ModuleVersion": "1.4.3", "ServerVersionRange": [ "2.6.0", "2.6.0" ], "ReleaseDate": "2024-04-07", "ReleaseNotes": "Added thread lock to address multi-threaded issue" },
           { "ModuleVersion": "1.5.0", "ServerVersionRange": [ "2.6.5", "2.7.0" ], "ReleaseDate": "2024-04-25", "ReleaseNotes": "Corrected NumPy 2.0 issue" },
           { "ModuleVersion": "1.6.0", "ServerVersionRange": [ "2.8.0", "2.9.3" ], "ReleaseDate": "2024-08-02", "ReleaseNotes": "Updated for server 2.8" },
-          { "ModuleVersion": "1.6.1", "ServerVersionRange": [ "2.9.4",     ""  ], "ReleaseDate": "2024-11-26", "ReleaseNotes": "Support for dual Ubuntu/Debian install" }
+          { "ModuleVersion": "1.6.1", "ServerVersionRange": [ "2.9.4",     ""  ], "ReleaseDate": "2024-11-26", "ReleaseNotes": "Support for dual Ubuntu/Debian install" },
+          { "ModuleVersion": "1.6.2", "ServerVersionRange": [ "2.9.4",     ""  ], "ReleaseDate": "2024-12-03", "ReleaseNotes": "Corrections for Linux, non-GPU install" }
         ],
         "DownloadableModels":[
           { "Name": "YOLOv8 Object Detection all sizes",    "Filename": "objectdetection-coco-yolov8-pt-nsmlx.zip",    "Folder": "assets", "Description": "YOLOv8 object detection using the COCO dataset. Sizes N(ano), S, M, L, XL", "FileSizeKb": 275800, "PreInstall": true },
