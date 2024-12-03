@@ -17,11 +17,18 @@ psutil                              # Installing psutil, a tool to check system 
 dill                                # Installing dill, for serializing and de-serializing Python objects
 py-cpuinfo                          # Installing py-cpuinfo to allow us to query CPU info
 
-#Install torch and torchvision CPU only versions
+# CPU specific Torch 1.8.0. Size ~531Mb
 -f https://download.pytorch.org/whl/cpu/torch_stable.html
 torch==1.8.0+cpu                    # Installing PyTorch, for Tensor computation and Deep neural networks
 -f https://download.pytorch.org/whl/cpu/torch_stable.html
 torchvision==0.9.0+cpu              # Installing TorchVision, for Computer Vision based AI
+
+# CPU specific Torch 1.13.0. Size ~830Mb
+# --extra-index-url https://download.pytorch.org/whl/cpu
+# torch==1.13.0+cpu               # Installing PyTorch, for Tensor computation and Deep neural networks
+# --extra-index-url https://download.pytorch.org/whl/cpu
+# torchvision==0.14.0+cpu         # Installing TorchVision, for Computer Vision based AI
+
 
 # Explicitly install ultralytics without optional dependencies (like CUDA).
 --no-deps
